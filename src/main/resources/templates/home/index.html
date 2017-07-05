@@ -5,7 +5,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title th:text="#{application_name}">Application Demo</title>
+<title th:text="#{application_name}">SANDBOX</title>
 
 <!-- Main style sheet -->
 <link href="../../static/css/main.css" th:href="@{/css/main.css}" rel="stylesheet" media="screen" />
@@ -18,7 +18,8 @@
 
 <body>
 	<div th:replace="fragments/header :: header"></div>
-
+        <img th:src="@{/static/images/banner-graphic.png}"
+          src="../../static/images/banner-graphic.png"/>
 	<div class="container">
 		<h3 th:text="#{welcome_header}">Welcome to the Spring Boot + Thymeleaf + Heroku template</h3>
 
