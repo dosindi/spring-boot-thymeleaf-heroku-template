@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 public class ProductController{
   public AtomicLong counter = new AtomicLong();
   
-  @RequestMapping("/products", method = RequestMethod.GET)
+  @RequestMapping("/products")
   public String productEndpoint(@RequestParam(value="name", defaultValue="World") String name){
 		String product = String.format("Item %s",counter.incrementAndGet()+"");
 		return product;
