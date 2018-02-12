@@ -10,7 +10,7 @@ public class ProductController{
   public AtomicLong counter = new AtomicLong();
   
   @RequestMapping("/products/", method = RequestMethod.GET)
-  public String productEndpoint(){
+  public String productEndpoint(@RequestParam(value="name", defaultValue="World") String name){
 		String product = String.format("Item %s",counter.incrementAndGet()+"");
 		return product;
 	}
