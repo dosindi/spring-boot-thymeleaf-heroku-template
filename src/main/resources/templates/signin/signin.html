@@ -16,6 +16,8 @@
 </head>
 <body>
 	<div class="container">
+		  <img th:src="@{/images/banner-graphic.png}"
+          src="../../static/images/banner-graphic.png" height="100" width="100" align="middle"/>
 		<form class="form-narrow form-horizontal" th:action="@{/signin}" method="post">
 			<fieldset>
 				<legend th:text="#{menu_signin}">Please Sign In</legend>
