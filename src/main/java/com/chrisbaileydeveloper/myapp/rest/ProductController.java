@@ -9,7 +9,7 @@ public class ProductController{
   
   @RequestMapping("/products")
   public String productEndpoint(){
-		String product = String.format("Item %s",counter.incrementAndGet());
+		String product = String.format("Item %s",counter.incrementAndGet()+"");
 		return product;
 	}
 }
