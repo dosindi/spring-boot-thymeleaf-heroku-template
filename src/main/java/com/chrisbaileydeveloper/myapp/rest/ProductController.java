@@ -2,12 +2,14 @@ import java.util.concurrent.atomic.AtomicLong;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.RequestMethod;
 
 @RestController
+@RequestMapping("/api")
 public class ProductController{
   public AtomicLong counter = new AtomicLong();
   
-  @RequestMapping("/products")
+  @RequestMapping("/products/", method = RequestMethod.GET)
   public String productEndpoint(){
 		String product = String.format("Item %s",counter.incrementAndGet()+"");
 		return product;
