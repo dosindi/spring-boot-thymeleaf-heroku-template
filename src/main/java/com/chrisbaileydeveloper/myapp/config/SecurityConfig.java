@@ -30,6 +30,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
         http
             .authorizeRequests()
 	            .antMatchers("/").permitAll()
+		    .anonymous().antMatchers("/products/**")
 	            .and()
             .formLogin()
 	            .loginPage("/signin")
