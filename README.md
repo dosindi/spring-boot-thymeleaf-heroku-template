@@ -1,8 +1,10 @@
 
 #Spring Boot + Thymeleaf + Heroku Template#
+
 This template has been designed to be used in conjunction with [JHipster](https://jhipster.github.io/) **version 2.6.0** to enable rapid development of Spring Boot + Thymeleaf applications that are fully deployable to Heroku.  The template's features have been fully documented in the [Spring Boot + Thymeleaf + Heroku Template](http://chrisbaileydeveloper.com/projects/spring-boot-thymeleaf-heroku-template/) web page on my website.
 
 ###Technology Stack###
+
 - Spring Boot, no-xml Spring MVC 4 web application for Servlet 3.0 environment
 - Thymeleaf templates with added Joda Time & Spring Security Dialects  
 - Heroku fully cloud deployable
@@ -12,12 +14,14 @@ This template has been designed to be used in conjunction with [JHipster](https:
 - Java 8, Spring Security 3.2, Maven 3, SLF4J, Logback, Bootstrap 3.3.4, jQuery 1.11.2, i18n, etc
 
 ###Live Demo###
+
 Be aware that this application is currently running on a free Heroku account.  If it hasn't been accessed in 30 minutes, then ***the first request will take up to 120 seconds***.  Note that the demo application might fail to load altogether if the Heroku servers are busy. 
 
 Here is the [Spring Boot + Thymeleaf + Heroku Template](https://spring-boot-thymeleaf-heroku.herokuapp.com/) running on Heroku.
 
 
 ###Suggested Usage###
+
 Utilize [JHipster](https://jhipster.github.io/) **version 2.6.0** to rapidly generate entities and Liquibase database changelogs that can then be transferred into this template.  
 
 Entity classes can be transferred from JHipster's `domain` package.  Liquibase changelogs can be transferred from JHipster's `src/main/resources/config/liquibase` folder.  
@@ -28,6 +32,7 @@ If interested in production-ready features, check out the [Spring Boot Actuator]
 
 
 ###JHipster Setup###
+
 This template relies on [JHipster](https://jhipster.github.io/) **version 2.6.0**.  In order to install version 2.6.0 please run the following command at the command prompt during your JHipster installation: 
 
 ```
